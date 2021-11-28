@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Playlist - Victor Rocha</title>
+
+    <link rel="shortcut icon" href="assets/images/fones-de-ouvido.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="container" id="container">
+
+        <div class="content" >
+
+            <div id="image_container"></div>
+            <h1 id="nameMusic"></h1>
+            <h3 id="artist"></h3>
+
+    
+
+            <input id="musicRange" type="range" min="0" max="" />
+
+            <div id="musicTime">
+              <p id="timeStart">00:00</p>
+              <p id="timeEnd">00:00</p>
+            </div>
+
+            <div class="audio-player" >
+                <audio id="audio">
+                    <source src="" id="audioSource" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="controlers">
+                <img  class="btn" width="30" onclick="back()" src="assets/images/botao-voltar.png" alt="next-music" id="next">
+                <img  class="btn" width="30" onclick="play()" src="assets/images/play-buttton.png" alt="next-music" id="play">
+                <img  class="btn" width="30" onclick="next()" src="assets/images/next.png" alt="next-music" id="previous">
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>

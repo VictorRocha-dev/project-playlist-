@@ -1,0 +1,102 @@
+*{
+    margin:auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+    text-align: center;
+
+}
+#image_container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.content{
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+    border: solid #000 3px;
+    background-color: rgb(206, 206, 206);
+    padding: 30px;
+}
+
+h1{
+    font-size: 30px;
+    font-family: "Sen" , sans-serif;
+}
+h3 , p{
+    font-size: 20px;
+    font-family: "Sen" , sans-serif;
+
+}
+#musicTime{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.controlers{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.controlers img{
+    cursor: pointer;
+}
+#musicRange{
+    width: 80%;
+    height: 10px;
+}
+
+@media screen  and (max-width: 900px){
+    .content{
+        width: 40%;
+    }
+    
+}
+@media screen  and (max-width: 800px){
+    .content{
+        width: 60%;
+    }
+    
+}
+@media screen  and (max-width: 600px){
+    .content{
+        width: 80%;
+    }
+    
+}
+@media screen  and (max-width: 400px){
+    .content{
+        width: 95%;
+    }
+    
+}
